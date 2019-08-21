@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>FLASK SHOP</title>
+</head>
+<body class="container">
+    <h1>Excellent!!!</h1>
+    <h3>You are into products list page!</h3>
+    <hr>
+    <br>
+    <div>
+        <img src="{{ url_for('static', filename='img/img1.jpeg') }}" alt="cat" style="width: 150px; height: 100px">
+        <a href="{{ url_for('products_app.product', product_id=1) }}">Go to product #1</a>
+    </div>
+    <br>
+    <div>
+        <img src="{{ url_for('static', filename='img/img2.jpeg') }}" alt="cat" style="width: 150px; height: 100px">
+        <a href="{{ url_for('products_app.product', product_id=2) }}">Go to product #2</a>
+    </div>
+    <br>
+    <div>
+        <img src="{{ url_for('static', filename='img/img3.jpeg') }}" alt="cat" style="width: 150px; height: 100px">
+        <a href="{{ url_for('products_app.product', product_id=3) }}">Go to product #3</a>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <a href="{{ url_for('main') }}">To main</a>
+    </div>
+</body>
+</html>

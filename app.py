@@ -1,6 +1,5 @@
 import argparse
 from flask import Flask
-from flask import request
 from flask import render_template
 from views import products_app
 
@@ -8,7 +7,7 @@ app = Flask(__name__)
 app.register_blueprint(products_app, url_prefix='/products')
 
 
-@app.route('/')
+@app.route('/', endpoint='main')
 def index():
     return render_template('index.html')
 

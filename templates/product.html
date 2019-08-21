@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>FLASK SHOP</title>
+</head>
+<body class="container">
+    <h1>Congratulations!!!</h1>
+    <h3>You are into product #{{ product_id }} page!</h3>
+    <hr>
+    <br>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+            culpa delectus deleniti dolore, esse hic ipsum nemo nesciunt nostrum
+            odio possimus quaerat quia recusandae repellat repudiandae
+            temporibus unde ut voluptatum.</p>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <a href="{{ url_for('main') }}">To main</a>
+    </div>
+</body>
+</html>
